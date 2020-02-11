@@ -118,10 +118,7 @@
   text-align: center;
 }
 
-.image-simon img{
-  width: 100px;
-  height: 100px;
-}
+
 
 .user{
   grid-area: user;
@@ -155,4 +152,33 @@
   grid-template-areas: "badge form user";
   gap: 10px; 
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.movie{
+  display: grid;
+  margin: 1%;
+  border-radius: 10px;
+  overflow: hidden;
+  grid-template-columns: minmax(auto, 1024px);
+  justify-content: center;
+  /* background-color: #f4fbff; */
+}
+.movie-container img{
+  max-width: 100%;
+}
+.movie-detail
+{
+  /* margin: 20px 40px; */
+  margin-top: -100px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  text-align: center;
+}
+
+.movie-container{
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
 }
