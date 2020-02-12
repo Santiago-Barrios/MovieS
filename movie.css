@@ -56,26 +56,26 @@
 {
     width: 40px;
     height: 40px;
-    color: orangered;
+    color: white;
 }
 
 .home-buttom
 {
   width: 40px;
   height: 40px;
-  color: orangered;
+  color: white;
 }
 
 .settings-buttom{
   width: 40px;
   height: 40px;
-  color: orangered;
+  color: white;
 }
 
 .fire-buttom{
   width: 40px;
   height: 40px;
-  color: orangered;
+  color: white;
 }
 
 .badge{
@@ -117,8 +117,6 @@
   margin-bottom: 10px;
   text-align: center;
 }
-
-
 
 .user{
   grid-area: user;
@@ -178,7 +176,29 @@
 
 .movie-container{
   display: grid;
-  grid-template-columns:  1fr 1fr 1fr;
+  grid-template-columns: 0.3fr 1fr 1fr 1fr;
+  grid-template-areas: "menu movie1 movie2 movie3";
   gap: 20px;
   justify-content: center;
 }
+.movie-menu{
+  grid-area: menu;
+  background-color: rgba(212, 71, 20, 0.795);
+}
+.movie1{
+  grid-area: movie1;
+}
+.movie2{
+  grid-area: movie2;
+}
+.movie3{
+  grid-area: movie3;
+}
+
+ol,
+li{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+
