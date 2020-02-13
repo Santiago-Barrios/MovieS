@@ -54,27 +54,23 @@
 /* Agregando los estilos de los iconos */
 .heart-buttom
 {
-    width: 40px;
-    height: 40px;
-    color: white;
+  font-size: 35px;
+  color: white;
 }
 
 .home-buttom
 {
-  width: 40px;
-  height: 40px;
+  font-size: 35px;
   color: white;
 }
 
 .settings-buttom{
-  width: 40px;
-  height: 40px;
+  font-size: 35px;
   color: white;
 }
 
 .fire-buttom{
-  width: 40px;
-  height: 40px;
+  font-size: 35px;
   color: white;
 }
 
@@ -169,15 +165,18 @@
   /* margin: 20px 40px; */
   margin-top: -100px;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.795);
   position: relative;
   text-align: center;
+  color: black;
 }
 
 .movie-container{
   display: grid;
   grid-template-columns: 0.3fr 1fr 1fr 1fr;
-  grid-template-areas: "menu movie1 movie2 movie3";
+  grid-template-areas: "menu movie1 movie2 movie3"
+                       "menu movie4 movie5 movie6"
+                       "menu movie7 movie8 movie9";
   gap: 20px;
   justify-content: center;
 }
@@ -194,11 +193,31 @@
 .movie3{
   grid-area: movie3;
 }
-
+.movie4{
+  grid-area: movie4;
+}
+.movie5{
+  grid-area: movie5;
+}
+.movie6{
+  grid-area: movie6;
+}
+.movie7{
+  grid-area: movie7;
+}
+.movie8{
+  grid-area: movie8;
+}
+.movie9{
+  grid-area: movie9;
+}
 ol,
 li{
   margin:0;
   padding: 0;
   list-style: none;
+  text-align: center;
 }
-
+#settingsLi{
+  margin-top: 800%;
+}
