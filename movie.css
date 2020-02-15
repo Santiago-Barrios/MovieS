@@ -236,3 +236,122 @@ li{
 .titulo3{
   grid-area: titulo3;
 }
+
+/* //RESPONSIVE  */
+
+@media screen and (max-width: 768px){
+  .hero-container{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "badge badge"
+                         "user user"
+                         "form form";
+    gap: 0px;
+  }
+  .form{
+    padding: 0;
+  }
+  .badge img{
+    margin-left: 30%;
+  }
+  .user p{
+    padding: 0;
+    text-align: center;
+  }
+  .LogoUser img{
+    padding: 0;
+    margin-left: 30%;
+  }
+  .title h1{
+    text-align: center;
+  }
+  .movie-container{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 1fr;
+    grid-template-areas: "menu titulo1 titulo1 "
+                         "menu movie1 movie2"
+                         "menu movie3 movie4"
+                         "menu titulo2 titulo2"
+                         "menu movie5 movie6"
+                         "menu titulo3 titulo3 "
+                         "menu movie7 movie8"
+                         "menu movie9 .";
+    gap: 5px;
+    justify-content: center;
+  }
+  #settingsLi{
+    margin-top: 1750%;
+  }
+  .movie-detail{
+    font-size: 0.75em;
+    margin-top: -75px;
+
+  }
+}
+@media screen and (max-width: 480px){
+  .movie-detail{
+    padding: 10px;
+  }
+  .movie-container{
+    grid-template-columns: 0.2fr 1fr 1fr;
+  }
+  .movie-container img{
+    max-width: 130%;
+    margin-left: -20px;
+  }
+  .movie-detail{
+    font-size: 0.6em;
+  }
+  h2{
+    font-size: 1.2em;
+    margin-bottom: 0;
+  }
+  .heart-buttom
+  {
+    font-size: 25px;
+    color: white;
+  }
+
+  .home-buttom
+  {
+   font-size: 25px;
+   color: white;
+  }
+
+  .settings-buttom{
+    font-size: 25px;
+   color: white;
+  }
+
+  .fire-buttom{
+    font-size: 25px;
+    color: white;
+  }
+  ol,li{
+    font-size: 0.8em;
+  }
+  #settingsLi{
+    margin-top: 2500%;
+  }
+  .title h1{
+    padding: 0;
+  }
+  .badge img{
+    padding: 0;
+    margin-left: 20%;
+  }
+  .LogoUser img{
+    margin-left: 20%;
+  }
+  .form input{
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 320px){
+  .movie-container img{
+    max-width: 225%;
+  }
+  .movie-detail{
+    font-size: 0.25em;
+    margin-top: -35px;
+  }
+}
