@@ -174,8 +174,11 @@
 .movie-container{
   display: grid;
   grid-template-columns: 0.3fr 1fr 1fr 1fr;
-  grid-template-areas: "menu movie1 movie2 movie3"
+  grid-template-areas: "menu titulo1 . . "
+                       "menu movie1 movie2 movie3"
+                       "menu titulo2 titulo2 . "
                        "menu movie4 movie5 movie6"
+                       "menu titulo3 . ."
                        "menu movie7 movie8 movie9";
   gap: 20px;
   justify-content: center;
@@ -219,5 +222,17 @@ li{
   text-align: center;
 }
 #settingsLi{
-  margin-top: 800%;
+  margin-top: 1100%;
+}
+#homeli{
+  margin-top: 25%;
+}
+.titulo1{
+  grid-area: titulo1;
+}
+.titulo2{
+  grid-area: titulo2;
+}
+.titulo3{
+  grid-area: titulo3;
 }
